@@ -1,4 +1,5 @@
 // Author: Jahdasha Flagg (Homework 11)
+
 var prompt = require("prompt");
 
 
