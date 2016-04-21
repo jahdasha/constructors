@@ -9,19 +9,21 @@
     this.color = color;
     this.gas = gas;
     this.tattleOn = [];
-    
+
 
     this.studentEntersBus = function (n, g, gr, GPA, d, s, c) {
       this.studentsOnTheBus.push(new Student(n, g, gr, GPA, d, s, c));
     }
 
-    this.busChatter = function(){
-      var catchPhrases = [];
-      for (var i = 0; i < this.studentsOnTheBus.length; i++) {
-        catchPhrases.push(this.studentsOnTheBus[i].canStudentHaveFun());
+    this.studentTattlesOn = function(y){
+      console.log("The tattle taler is : "+y);
+      for(i=0;i<this.studentsOnTheBus.length;i++){
+        if(this.studentsOnTheBus[i].name == y){
+          console.log("This student has been removed: "+this.studentsOnTheBus[i].name);
+          this.studentsOnTheBus.splice(i,1);
+        }
       }
-      return catchPhrases;
     }
   }
-
   module.exports = Bus;
+
