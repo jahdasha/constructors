@@ -19,7 +19,8 @@
 
 * Type in node main.js to start the app.
 
-These are the npm packages I used and are needed to run the app
+* These are the npm packages I used and are needed to run the app
+
 	1. fs package in node
 	2. [prompt](https://www.npmjs.com/package/prompt)
 	
