@@ -42,8 +42,8 @@
             type: "string",
             required: true
             },
-            tattle: {
-            description: "If you are not the first student, give a NAME to tattle on and they will be removed. If you are the first student or you don't want to tattle, press enter",
+            pickup: {
+            description: "If this is your stop, type your name and you will be removed from the bus as you ars exiting. If this is't your stop simply press enter",
             type: "string",
             required: false
             }
@@ -77,12 +77,12 @@
                 z++;
             }
             if(main.studentsOnTheBus.length>1){
-                if (result.tattle){
-                    console.log("Students before tattle: ");
+                if (result.pickup){
+                    console.log("Students before pickup: ");
                     for(j=0;j<main.studentsOnTheBus.length;j++){
                         console.log(main.studentsOnTheBus[j].name);
                     }
-                    main.studentTattlesOn(result.tattle)
+                    main.studentPickedUp(result.pickup)
                 }
             }
             if(main.studentsOnTheBus.length == 25){

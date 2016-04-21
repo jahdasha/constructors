@@ -15,8 +15,8 @@
       this.studentsOnTheBus.push(new Student(n, g, gr, GPA, d, s, c));
     }
 
-    this.studentTattlesOn = function(y){
-      console.log("The tattle taler is : "+y);
+    this.studentPickedUp = function(y){
+      console.log("This is your stop: "+y);
       for(i=0;i<this.studentsOnTheBus.length;i++){
         if(this.studentsOnTheBus[i].name == y){
           console.log("This student has been removed: "+this.studentsOnTheBus[i].name);
