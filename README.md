@@ -14,13 +14,12 @@
 	5. amount of detentions the student has had
 	6. amount of time the student has fallen asleep in class
 	7. student's catch phrase
-	
+
 * It must be ran in the command line.
 
 * Type in node main.js to start the app.
 
 These are the npm packages I used and are needed to run the app
-
 	1. fs package in node
 	2. [prompt](https://www.npmjs.com/package/prompt)
 	
